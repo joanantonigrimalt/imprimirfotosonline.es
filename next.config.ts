@@ -1,7 +1,24 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.supabase.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
+  experimental: {
+    optimizePackageImports: ['@supabase/supabase-js', 'stripe'],
+  },
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;
