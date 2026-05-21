@@ -1,0 +1,67 @@
+{
+  "name": "imprimirfotosonline.es",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL Connection Pooling URL (port 6543)",
+      "required": true
+    },
+    "DIRECT_URL": {
+      "description": "PostgreSQL Direct Connection URL (port 5432)",
+      "required": true
+    },
+    "NEXT_PUBLIC_SUPABASE_URL": {
+      "description": "Supabase project URL",
+      "required": true
+    },
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": {
+      "description": "Supabase anonymous/published key",
+      "required": true
+    },
+    "SUPABASE_SERVICE_ROLE_KEY": {
+      "description": "Supabase service role key (secret)",
+      "required": true
+    },
+    "STRIPE_SECRET_KEY": {
+      "description": "Stripe secret key (test or live)",
+      "required": false
+    },
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": {
+      "description": "Stripe publishable key",
+      "required": false
+    },
+    "STRIPE_WEBHOOK_SECRET": {
+      "description": "Stripe webhook signing secret",
+      "required": false
+    },
+    "RESEND_API_KEY": {
+      "description": "Resend email service API key",
+      "required": false
+    },
+    "EMAIL_FROM": {
+      "description": "Email sender address",
+      "required": false
+    },
+    "EMAIL_ADMIN": {
+      "description": "Admin email for notifications",
+      "required": false
+    },
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Telegram bot token from @BotFather",
+      "required": false
+    },
+    "TELEGRAM_CHAT_ID": {
+      "description": "Telegram chat ID for admin alerts",
+      "required": false
+    },
+    "NEXT_PUBLIC_URL": {
+      "description": "Public URL of your Vercel deployment",
+      "required": true
+    },
+    "ADMIN_EMAILS": {
+      "description": "Comma-separated admin emails",
+      "required": false
+    }
+  }
+}
